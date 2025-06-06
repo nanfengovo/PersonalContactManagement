@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Element UI联系人管理系统</title>
+  <!-- 引入Element UI样式 -->
+  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+  <style>
+    .app-container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+    .toolbar {
+      margin-bottom: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .search-input {
+      width: 300px;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <div class="app-container">
+      <el-card>
+        <div slot="header">
+          <span style="font-size: 18px; font-weight: bold;">联系人管理系统</span>
+        </div>
+        
+        <div class="toolbar">
+          <el-button type="primary" @click="showAddDialog">添加联系人</el-button>
+          <el-button @click="importContacts">导入联系人</el-button>
+          <el-button @click="exportContacts">导出联系人</el-button>
+          <el-button @click="showMergeDialog">合并联系人</el-button>
+          <el-input
+            class="search-input"
+            v-model="searchKeyword"
+            placeholder="输入姓名/电话/邮箱搜索"
+            clearable
+            @clear="handleSearchClear"
+            @keyup.enter.native="handleSearch">
+            <el-button slot="append" icon="el-icon-search" @click="handleSearch"></el-button>
+          </el-input>
+        </div>
+
+        <el-table
+          :data="paginatedContacts"
+          style="width: 100%"
+          v-loading="loading">
+          <el-table-column prop="name" label="姓名" width="150"></el-table-column>
+          <el-table-column prop="phone" label="电话" width="180"></el-table-column>
+          <el-table-column prop="email" label="邮箱"></el-table-column>
+          <el-table-column label="操作" width="180">
+            <template slot-scope="scope">
+              <el-button
+                size="mini"
+                @click="handleEdit(scope.$index, scope.row)">编辑</el-button>
+              <el-button
+                size="mini"
+                type="danger"
+                @click="handleDelete(scope.$index, scope.row)">删除</el-button>
+            </template>
+          </el-table-column>
+        </el-table>
+
+        <el-pagination
+          @size-change="handleSizeChange"
+          @current-change="handleCurrentChange"
+          :current-page="currentPage"
+          :page-sizes="[5, 10, 20, 50]"
+          :page-size="pageSize"
+          layout="total, sizes, prev, pager, next, jumper"
+          :total="filteredContacts.length"
+          style="margin-top: 20px;">
+        </el-pagination>
+      </el-card>
+
+      <!-- 添加/编辑对话框 -->
+      <el-dialog :title="dialogTitle" :visible.sync="dialogVisible" width="30%">
+        <el-form :model="currentContact" label-width="80px">
+          <el-form-item label="姓名" required>
+            <el-input v-model="currentContact.name"></el-input>
+          </el-form-item>
+          <el-form-item label="电话" required>
+            <el-input v-model="currentContact.phone"></el-input>
+          </el-form-item>
+          <el-form-item label="邮箱">
+            <el-input v-model="currentContact.email"></el-input>
+          </el-form-item>
+        </el-form>
+        <span slot="footer" class="dialog-footer">
+          <el-button @click="dialogVisible = false">取 消</el-button>
+          <el-button type="primary" @click="saveContact">确 定</el-button>
+        </span>
+      </el-dialog>
+
+      <!-- 合并对话框 -->
+      <el-dialog title="合并联系人" :visible.sync="mergeDialogVisible" width="40%">
+        <el-form label-width="100px">
+          <el-form-item label="合并依据">
+            <el-radio-group v-model="mergeBy">
+              <el-radio label="name">姓名</el-radio>
+              <el-radio label="phone">电话</el-radio>
+            </el-radio-group>
+          </el-form-item>
+          <el-form-item label="合并值" v-if="mergeBy === 'name'">
+            <el-select v-model="mergeValue" filterable placeholder="请选择要合并的姓名">
+              <el-option
+                v-for="name in duplicateNames"
+                :key="name"
+                :label="name"
+                :value="name">
+              </el-option>
+            </el-select>
+          </el-form-item>
+          <el-form-item label="合并值" v-if="mergeBy === 'phone'">
+            <el-select v-model="mergeValue" filterable placeholder="请选择要合并的电话">
+              <el-option
+                v-for="phone in duplicatePhones"
+                :key="phone"
+                :label="phone"
+                :value="phone">
+              </el-option>
+            </el-select>
+          </el-form-item>
+        </el-form>
+        <span slot="footer" class="dialog-footer">
+          <el-button @click="mergeDialogVisible = false">取 消</el-button>
+          <el-button type="primary" @click="doMerge">开始合并</el-button>
+        </span>
+      </el-dialog>
+    </div>
+  </div>
+
+  <!-- 引入Vue和Element UI -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+  <script>
+    function paginatedContacts(){
+          const start = (this.currentPage - 1) * this.pageSize;
+          const end = start + this.pageSize;
+          return this.filteredContacts.slice(start, end);
+    }
+    new Vue({
+      el: '#app',
+      data() {
+        return {
+          contacts: [
+            { id: 1, name: "张三", phone: "13800138001", email: "zhangsan@example.com" },
+            { id: 2, name: "李四", phone: "13800138002", email: "lisi@example.com" },
+            { id: 3, name: "王五", phone: "13800138003", email: "wangwu@example.com" },
+            { id: 4, name: "张三", phone: "13800138004", email: "zhangsan2@example.com" },
+            { id: 5, name: "赵六", phone: "13800138005", email: "zhaoliu@example.com" },
+            { id: 6, name: "钱七", phone: "13800138006", email: "qianqi@example.com" },
+            { id: 7, name: "孙八", phone: "13800138007", email: "sunba@example.com" },
+            { id: 8, name: "李四", phone: "13800138008", email: "lisi2@example.com" }
+          ],
+          searchKeyword: '',
+          currentPage: 1,
+          pageSize: 5,
+          loading: false,
+          dialogVisible: false,
+          mergeDialogVisible: false,
+          dialogTitle: '添加联系人',
+          currentContact: {
+            id: 0,
+            name: '',
+            phone: '',
+            email: ''
+          },
+          mergeBy: 'name',
+          mergeValue: '',
+          isEdit: false
+        }
+      },
+      computed: {
+        filteredContacts() {
+          if (!this.searchKeyword) return this.contacts;
+          const keyword = this.searchKeyword.toLowerCase();
+          return this.contacts.filter(c => 
+            c.name.toLowerCase().includes(keyword) || 
+            c.phone.includes(keyword) || 
+            (c.email && c.email.toLowerCase().includes(keyword))
+          );
+        },
+        paginatedContacts() {
+          const start = (this.currentPage - 1) * this.pageSize;
+          const end = start + this.pageSize;
+          return this.filteredContacts.slice(start, end);
+        },
+        duplicateNames() {
+          const nameCount = {};
+          this.contacts.forEach(c => {
+            nameCount[c.name] = (nameCount[c.name] || 0) + 1;
+          });
+          return Object.keys(nameCount).filter(name => nameCount[name] > 1);
+        },
+        duplicatePhones() {
+          const phoneCount = {};
+          this.contacts.forEach(c => {
+            phoneCount[c.phone] = (phoneCount[c.phone] || 0) + 1;
+          });
+          return Object.keys(phoneCount).filter(phone => phoneCount[phone] > 1);
+        }
+      },
+      methods: {
+        handleSizeChange(val) {
+          this.pageSize = val;
+        },
+        handleCurrentChange(val) {
+          this.currentPage = val;
+        },
+        handleSearch() {
+          this.currentPage = 1;
+        },
+        handleSearchClear() {
+          this.searchKeyword = '';
+          this.currentPage = 1;
+        },
+        showAddDialog() {
+          this.dialogTitle = '添加联系人';
+          this.currentContact = { id: 0, name: '', phone: '', email: '' };
+          this.isEdit = false;
+          this.dialogVisible = true;
+        },
+        handleEdit(index, row) {
+          this.dialogTitle = '编辑联系人';
+          this.currentContact = { ...row };
+          this.isEdit = true;
+          this.dialogVisible = true;
+        },
+        handleDelete(index, row) {
+          this.$confirm('确定要删除此联系人吗?', '提示', {
+            confirmButtonText: '确定',
+            cancelButtonText: '取消',
+            type: 'warning'
+          }).then(() => {
+            this.contacts = this.contacts.filter(c => c.id !== row.id);
+            this.$message({
+              type: 'success',
+              message: '删除成功!'
+            });
+          }).catch(() => {});
+        },
+        saveContact() {
+          if (!this.currentContact.name || !this.currentContact.phone) {
+            this.$message.error('姓名和电话不能为空');
+            return;
+          }
+
+          if (this.isEdit) {
+            const index = this.contacts.findIndex(c => c.id === this.currentContact.id);
+            this.contacts.splice(index, 1, { ...this.currentContact });
+            this.$message.success('修改成功');
+          } else {
+            this.currentContact.id = Date.now();
+            this.contacts.unshift({ ...this.currentContact });
+            this.$message.success('添加成功');
+          }
+          this.dialogVisible = false;
+        },
+        importContacts() {
+          this.$message.info('实际实现需添加文件读取逻辑');
+          // 模拟导入
+          const importedContacts = [
+            { id: 9, name: "周九", phone: "13800138009", email: "zhoujiu@example.com" },
+            { id: 10, name: "吴十", phone: "13800138010", email: "wushi@example.com" }
+          ];
+          this.contacts = [...this.contacts, ...importedContacts];
+          this.$message.success(`成功导入 ${importedContacts.length} 条联系人`);
+        },
+        exportContacts() {
+          this.$message.info('实际实现需添加导出逻辑');
+          console.log('导出联系人:', this.contacts);
+          this.$message.success('导出成功(控制台查看)');
+        },
+        showMergeDialog() {
+          if (this.duplicateNames.length === 0 && this.duplicatePhones.length === 0) {
+            this.$message.warning('没有找到可合并的联系人');
+            return;
+          }
+          this.mergeValue = '';
+          this.mergeDialogVisible = true;
+        },
+        doMerge() {
+          if (!this.mergeValue) {
+            this.$message.error('请选择要合并的值');
+            return;
+          }
+
+          let toMerge = [];
+          if (this.mergeBy === 'name') {
+            toMerge = this.contacts.filter(c => c.name === this.mergeValue);
+          } else {
+            toMerge = this.contacts.filter(c => c.phone === this.mergeValue);
+          }
+
+          if (toMerge.length <= 1) {
+            this.$message.warning('没有找到重复的联系人');
+            return;
+          }
+
+          // 合并逻辑
+          const mergedPhone = toMerge.map(c => c.phone).join('/');
+          const mergedEmail = toMerge.map(c => c.email).filter(e => e).join('/');
+          const mergedName = this.mergeBy === 'name' ? this.mergeValue : toMerge[0].name;
+
+          // 删除原记录
+          this.contacts = this.contacts.filter(c => 
+            this.mergeBy === 'name' ? c.name !== this.mergeValue : c.phone !== this.mergeValue
+          );
+
+          // 添加合并后记录
+          this.contacts.unshift({
+            id: Date.now(),
+            name: mergedName,
+            phone: mergedPhone,
+            email: mergedEmail
+          });
+
+          this.$message.success(`成功合并 ${toMerge.length} 条联系人`);
+          this.mergeDialogVisible = false;
+        }
+      }
+    });
+  </script>
+</body>
+</html>
