@@ -1,0 +1,6 @@
+@PersonalContactManagement_HostAddress = http://localhost:5153
+
+GET {{PersonalContactManagement_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

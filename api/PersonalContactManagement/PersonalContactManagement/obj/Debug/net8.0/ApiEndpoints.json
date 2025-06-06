@@ -1,0 +1,81 @@
+[
+  {
+    "ContainingType": "PersonalContactManagement.Controllers.ContactController",
+    "Method": "AddContactPerson",
+    "RelativePath": "api/Contact/AddContactPerson",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "personDTO",
+        "Type": "PersonalContactManagement.Domain.Model.AddContactPersonDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PersonalContactManagement.Controllers.ContactController",
+    "Method": "DeletedContactPersonById",
+    "RelativePath": "api/Contact/DeletedContactPersonById",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PersonalContactManagement.Controllers.ContactController",
+    "Method": "EditContactPersonById",
+    "RelativePath": "api/Contact/EditContactPersonById",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "editContact",
+        "Type": "PersonalContactManagement.Domain.Model.EditContactPersonDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PersonalContactManagement.Controllers.ContactController",
+    "Method": "GetContactPersonById",
+    "RelativePath": "api/Contact/GetContactPersonById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PersonalContactManagement.Controllers.ContactController",
+    "Method": "GetContactPersonList",
+    "RelativePath": "api/Contact/GetContactPersonList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]
