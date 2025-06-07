@@ -1,54 +1,58 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Code\\my_project\\project_code\\PersonalContactManagement\\api\\PersonalContactManagement\\",
+  "WorkspaceRootPath": "E:\\\u5DE5\u4F5C\\Project_Code\\PersonalContactManagement\\PersonalContactManagement\\api\\PersonalContactManagement\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FDC81621-C0A4-40E1-9C4E-85E3E73F7BC5}|PersonalContactManagement\\PersonalContactManagement.csproj|c:\\code\\my_project\\project_code\\personalcontactmanagement\\api\\personalcontactmanagement\\personalcontactmanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FDC81621-C0A4-40E1-9C4E-85E3E73F7BC5}|PersonalContactManagement\\PersonalContactManagement.csproj|solutionrelative:personalcontactmanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FDC81621-C0A4-40E1-9C4E-85E3E73F7BC5}|PersonalContactManagement\\PersonalContactManagement.csproj|c:\\code\\my_project\\project_code\\personalcontactmanagement\\api\\personalcontactmanagement\\personalcontactmanagement\\domain\\serve\\contactserve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FDC81621-C0A4-40E1-9C4E-85E3E73F7BC5}|PersonalContactManagement\\PersonalContactManagement.csproj|e:\\\u5DE5\u4F5C\\project_code\\personalcontactmanagement\\personalcontactmanagement\\api\\personalcontactmanagement\\personalcontactmanagement\\domain\\serve\\contactserve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FDC81621-C0A4-40E1-9C4E-85E3E73F7BC5}|PersonalContactManagement\\PersonalContactManagement.csproj|solutionrelative:personalcontactmanagement\\domain\\serve\\contactserve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FDC81621-C0A4-40E1-9C4E-85E3E73F7BC5}|PersonalContactManagement\\PersonalContactManagement.csproj|c:\\code\\my_project\\project_code\\personalcontactmanagement\\api\\personalcontactmanagement\\personalcontactmanagement\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FDC81621-C0A4-40E1-9C4E-85E3E73F7BC5}|PersonalContactManagement\\PersonalContactManagement.csproj|solutionrelative:personalcontactmanagement\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FDC81621-C0A4-40E1-9C4E-85E3E73F7BC5}|PersonalContactManagement\\PersonalContactManagement.csproj|c:\\code\\my_project\\project_code\\personalcontactmanagement\\api\\personalcontactmanagement\\personalcontactmanagement\\domain\\iserve\\icontactserve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FDC81621-C0A4-40E1-9C4E-85E3E73F7BC5}|PersonalContactManagement\\PersonalContactManagement.csproj|e:\\\u5DE5\u4F5C\\project_code\\personalcontactmanagement\\personalcontactmanagement\\api\\personalcontactmanagement\\personalcontactmanagement\\domain\\iserve\\icontactserve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FDC81621-C0A4-40E1-9C4E-85E3E73F7BC5}|PersonalContactManagement\\PersonalContactManagement.csproj|solutionrelative:personalcontactmanagement\\domain\\iserve\\icontactserve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FDC81621-C0A4-40E1-9C4E-85E3E73F7BC5}|PersonalContactManagement\\PersonalContactManagement.csproj|c:\\code\\my_project\\project_code\\personalcontactmanagement\\api\\personalcontactmanagement\\personalcontactmanagement\\domain\\model\\editcontactpersondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FDC81621-C0A4-40E1-9C4E-85E3E73F7BC5}|PersonalContactManagement\\PersonalContactManagement.csproj|e:\\\u5DE5\u4F5C\\project_code\\personalcontactmanagement\\personalcontactmanagement\\api\\personalcontactmanagement\\personalcontactmanagement\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDC81621-C0A4-40E1-9C4E-85E3E73F7BC5}|PersonalContactManagement\\PersonalContactManagement.csproj|solutionrelative:personalcontactmanagement\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDC81621-C0A4-40E1-9C4E-85E3E73F7BC5}|PersonalContactManagement\\PersonalContactManagement.csproj|e:\\\u5DE5\u4F5C\\project_code\\personalcontactmanagement\\personalcontactmanagement\\api\\personalcontactmanagement\\personalcontactmanagement\\domain\\model\\editcontactpersondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FDC81621-C0A4-40E1-9C4E-85E3E73F7BC5}|PersonalContactManagement\\PersonalContactManagement.csproj|solutionrelative:personalcontactmanagement\\domain\\model\\editcontactpersondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FDC81621-C0A4-40E1-9C4E-85E3E73F7BC5}|PersonalContactManagement\\PersonalContactManagement.csproj|c:\\code\\my_project\\project_code\\personalcontactmanagement\\api\\personalcontactmanagement\\personalcontactmanagement\\domain\\model\\addcontactpersondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FDC81621-C0A4-40E1-9C4E-85E3E73F7BC5}|PersonalContactManagement\\PersonalContactManagement.csproj|e:\\\u5DE5\u4F5C\\project_code\\personalcontactmanagement\\personalcontactmanagement\\api\\personalcontactmanagement\\personalcontactmanagement\\domain\\model\\addcontactpersondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FDC81621-C0A4-40E1-9C4E-85E3E73F7BC5}|PersonalContactManagement\\PersonalContactManagement.csproj|solutionrelative:personalcontactmanagement\\domain\\model\\addcontactpersondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FDC81621-C0A4-40E1-9C4E-85E3E73F7BC5}|PersonalContactManagement\\PersonalContactManagement.csproj|c:\\code\\my_project\\project_code\\personalcontactmanagement\\api\\personalcontactmanagement\\personalcontactmanagement\\entityframecore\\entitymodel\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FDC81621-C0A4-40E1-9C4E-85E3E73F7BC5}|PersonalContactManagement\\PersonalContactManagement.csproj|solutionrelative:personalcontactmanagement\\entityframecore\\entitymodel\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FDC81621-C0A4-40E1-9C4E-85E3E73F7BC5}|PersonalContactManagement\\PersonalContactManagement.csproj|c:\\code\\my_project\\project_code\\personalcontactmanagement\\api\\personalcontactmanagement\\personalcontactmanagement\\entityframecore\\config\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FDC81621-C0A4-40E1-9C4E-85E3E73F7BC5}|PersonalContactManagement\\PersonalContactManagement.csproj|e:\\\u5DE5\u4F5C\\project_code\\personalcontactmanagement\\personalcontactmanagement\\api\\personalcontactmanagement\\personalcontactmanagement\\entityframecore\\config\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FDC81621-C0A4-40E1-9C4E-85E3E73F7BC5}|PersonalContactManagement\\PersonalContactManagement.csproj|solutionrelative:personalcontactmanagement\\entityframecore\\config\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FDC81621-C0A4-40E1-9C4E-85E3E73F7BC5}|PersonalContactManagement\\PersonalContactManagement.csproj|c:\\code\\my_project\\project_code\\personalcontactmanagement\\api\\personalcontactmanagement\\personalcontactmanagement\\apihelper\\result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FDC81621-C0A4-40E1-9C4E-85E3E73F7BC5}|PersonalContactManagement\\PersonalContactManagement.csproj|e:\\\u5DE5\u4F5C\\project_code\\personalcontactmanagement\\personalcontactmanagement\\api\\personalcontactmanagement\\personalcontactmanagement\\entityframecore\\entitymodel\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDC81621-C0A4-40E1-9C4E-85E3E73F7BC5}|PersonalContactManagement\\PersonalContactManagement.csproj|solutionrelative:personalcontactmanagement\\entityframecore\\entitymodel\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDC81621-C0A4-40E1-9C4E-85E3E73F7BC5}|PersonalContactManagement\\PersonalContactManagement.csproj|e:\\\u5DE5\u4F5C\\project_code\\personalcontactmanagement\\personalcontactmanagement\\api\\personalcontactmanagement\\personalcontactmanagement\\miniexclemodel\\contactexcel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDC81621-C0A4-40E1-9C4E-85E3E73F7BC5}|PersonalContactManagement\\PersonalContactManagement.csproj|solutionrelative:personalcontactmanagement\\miniexclemodel\\contactexcel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDC81621-C0A4-40E1-9C4E-85E3E73F7BC5}|PersonalContactManagement\\PersonalContactManagement.csproj|e:\\\u5DE5\u4F5C\\project_code\\personalcontactmanagement\\personalcontactmanagement\\api\\personalcontactmanagement\\personalcontactmanagement\\apihelper\\result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FDC81621-C0A4-40E1-9C4E-85E3E73F7BC5}|PersonalContactManagement\\PersonalContactManagement.csproj|solutionrelative:personalcontactmanagement\\apihelper\\result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FDC81621-C0A4-40E1-9C4E-85E3E73F7BC5}|PersonalContactManagement\\PersonalContactManagement.csproj|c:\\code\\my_project\\project_code\\personalcontactmanagement\\api\\personalcontactmanagement\\personalcontactmanagement\\entityframecore\\common.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FDC81621-C0A4-40E1-9C4E-85E3E73F7BC5}|PersonalContactManagement\\PersonalContactManagement.csproj|e:\\\u5DE5\u4F5C\\project_code\\personalcontactmanagement\\personalcontactmanagement\\api\\personalcontactmanagement\\personalcontactmanagement\\entityframecore\\common.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FDC81621-C0A4-40E1-9C4E-85E3E73F7BC5}|PersonalContactManagement\\PersonalContactManagement.csproj|solutionrelative:personalcontactmanagement\\entityframecore\\common.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Code\\my_project\\project_code\\PersonalContactManagement\\api\\PersonalContactManagement\\PersonalContactManagement\\Migrations\\20250606033117_UPdateEntity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:PersonalContactManagement\\Migrations\\20250606033117_UPdateEntity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FDC81621-C0A4-40E1-9C4E-85E3E73F7BC5}|PersonalContactManagement\\PersonalContactManagement.csproj|e:\\\u5DE5\u4F5C\\project_code\\personalcontactmanagement\\personalcontactmanagement\\api\\personalcontactmanagement\\personalcontactmanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDC81621-C0A4-40E1-9C4E-85E3E73F7BC5}|PersonalContactManagement\\PersonalContactManagement.csproj|solutionrelative:personalcontactmanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Code\\my_project\\project_code\\PersonalContactManagement\\api\\PersonalContactManagement\\PersonalContactManagement\\Migrations\\20250606024906_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:PersonalContactManagement\\Migrations\\20250606024906_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FDC81621-C0A4-40E1-9C4E-85E3E73F7BC5}|PersonalContactManagement\\PersonalContactManagement.csproj|e:\\\u5DE5\u4F5C\\project_code\\personalcontactmanagement\\personalcontactmanagement\\api\\personalcontactmanagement\\personalcontactmanagement\\migrations\\20250606033117_updateentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDC81621-C0A4-40E1-9C4E-85E3E73F7BC5}|PersonalContactManagement\\PersonalContactManagement.csproj|solutionrelative:personalcontactmanagement\\migrations\\20250606033117_updateentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDC81621-C0A4-40E1-9C4E-85E3E73F7BC5}|PersonalContactManagement\\PersonalContactManagement.csproj|e:\\\u5DE5\u4F5C\\project_code\\personalcontactmanagement\\personalcontactmanagement\\api\\personalcontactmanagement\\personalcontactmanagement\\migrations\\20250606024906_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDC81621-C0A4-40E1-9C4E-85E3E73F7BC5}|PersonalContactManagement\\PersonalContactManagement.csproj|solutionrelative:personalcontactmanagement\\migrations\\20250606024906_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,41 +66,44 @@
           "Children": [
             {
               "$type": "Bookmark",
+              "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{f677620d-05fd-48ed-8423-72a12db4deef}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "20250606033117_UPdateEntity.cs",
-              "DocumentMoniker": "C:\\Code\\my_project\\project_code\\PersonalContactManagement\\api\\PersonalContactManagement\\PersonalContactManagement\\Migrations\\20250606033117_UPdateEntity.cs",
-              "RelativeDocumentMoniker": "PersonalContactManagement\\Migrations\\20250606033117_UPdateEntity.cs",
-              "ToolTip": "C:\\Code\\my_project\\project_code\\PersonalContactManagement\\api\\PersonalContactManagement\\PersonalContactManagement\\Migrations\\20250606033117_UPdateEntity.cs",
-              "RelativeToolTip": "PersonalContactManagement\\Migrations\\20250606033117_UPdateEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvw0AAAAxAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "ContactController.cs",
+              "DocumentMoniker": "E:\\\u5DE5\u4F5C\\Project_Code\\PersonalContactManagement\\PersonalContactManagement\\api\\PersonalContactManagement\\PersonalContactManagement\\Controllers\\ContactController.cs",
+              "RelativeDocumentMoniker": "PersonalContactManagement\\Controllers\\ContactController.cs",
+              "ToolTip": "E:\\\u5DE5\u4F5C\\Project_Code\\PersonalContactManagement\\PersonalContactManagement\\api\\PersonalContactManagement\\PersonalContactManagement\\Controllers\\ContactController.cs",
+              "RelativeToolTip": "PersonalContactManagement\\Controllers\\ContactController.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAmwGgAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-06T03:31:17.626Z",
+              "WhenOpened": "2025-06-06T02:51:49.394Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Common.cs",
-              "DocumentMoniker": "C:\\Code\\my_project\\project_code\\PersonalContactManagement\\api\\PersonalContactManagement\\PersonalContactManagement\\EntityFrameCore\\Common.cs",
-              "RelativeDocumentMoniker": "PersonalContactManagement\\EntityFrameCore\\Common.cs",
-              "ToolTip": "C:\\Code\\my_project\\project_code\\PersonalContactManagement\\api\\PersonalContactManagement\\PersonalContactManagement\\EntityFrameCore\\Common.cs",
-              "RelativeToolTip": "PersonalContactManagement\\EntityFrameCore\\Common.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-06T03:28:40.117Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "AddContactPersonDTO.cs",
-              "DocumentMoniker": "C:\\Code\\my_project\\project_code\\PersonalContactManagement\\api\\PersonalContactManagement\\PersonalContactManagement\\Domain\\Model\\AddContactPersonDTO.cs",
+              "DocumentMoniker": "E:\\\u5DE5\u4F5C\\Project_Code\\PersonalContactManagement\\PersonalContactManagement\\api\\PersonalContactManagement\\PersonalContactManagement\\Domain\\Model\\AddContactPersonDTO.cs",
               "RelativeDocumentMoniker": "PersonalContactManagement\\Domain\\Model\\AddContactPersonDTO.cs",
-              "ToolTip": "C:\\Code\\my_project\\project_code\\PersonalContactManagement\\api\\PersonalContactManagement\\PersonalContactManagement\\Domain\\Model\\AddContactPersonDTO.cs",
+              "ToolTip": "E:\\\u5DE5\u4F5C\\Project_Code\\PersonalContactManagement\\PersonalContactManagement\\api\\PersonalContactManagement\\PersonalContactManagement\\Domain\\Model\\AddContactPersonDTO.cs",
               "RelativeToolTip": "PersonalContactManagement\\Domain\\Model\\AddContactPersonDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -105,63 +112,76 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ContactServe.cs",
-              "DocumentMoniker": "C:\\Code\\my_project\\project_code\\PersonalContactManagement\\api\\PersonalContactManagement\\PersonalContactManagement\\Domain\\Serve\\ContactServe.cs",
-              "RelativeDocumentMoniker": "PersonalContactManagement\\Domain\\Serve\\ContactServe.cs",
-              "ToolTip": "C:\\Code\\my_project\\project_code\\PersonalContactManagement\\api\\PersonalContactManagement\\PersonalContactManagement\\Domain\\Serve\\ContactServe.cs",
-              "RelativeToolTip": "PersonalContactManagement\\Domain\\Serve\\ContactServe.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA0AAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "EditContactPersonDTO.cs",
+              "DocumentMoniker": "E:\\\u5DE5\u4F5C\\Project_Code\\PersonalContactManagement\\PersonalContactManagement\\api\\PersonalContactManagement\\PersonalContactManagement\\Domain\\Model\\EditContactPersonDTO.cs",
+              "RelativeDocumentMoniker": "PersonalContactManagement\\Domain\\Model\\EditContactPersonDTO.cs",
+              "ToolTip": "E:\\\u5DE5\u4F5C\\Project_Code\\PersonalContactManagement\\PersonalContactManagement\\api\\PersonalContactManagement\\PersonalContactManagement\\Domain\\Model\\EditContactPersonDTO.cs",
+              "RelativeToolTip": "PersonalContactManagement\\Domain\\Model\\EditContactPersonDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwkAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-06T03:20:09.113Z",
+              "WhenOpened": "2025-06-06T07:57:00.697Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
+              "Title": "Common.cs",
+              "DocumentMoniker": "E:\\\u5DE5\u4F5C\\Project_Code\\PersonalContactManagement\\PersonalContactManagement\\api\\PersonalContactManagement\\PersonalContactManagement\\EntityFrameCore\\Common.cs",
+              "RelativeDocumentMoniker": "PersonalContactManagement\\EntityFrameCore\\Common.cs",
+              "ToolTip": "E:\\\u5DE5\u4F5C\\Project_Code\\PersonalContactManagement\\PersonalContactManagement\\api\\PersonalContactManagement\\PersonalContactManagement\\EntityFrameCore\\Common.cs",
+              "RelativeToolTip": "PersonalContactManagement\\EntityFrameCore\\Common.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T03:28:40.117Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ContactExcel.cs",
+              "DocumentMoniker": "E:\\\u5DE5\u4F5C\\Project_Code\\PersonalContactManagement\\PersonalContactManagement\\api\\PersonalContactManagement\\PersonalContactManagement\\MiniExcleModel\\ContactExcel.cs",
+              "RelativeDocumentMoniker": "PersonalContactManagement\\MiniExcleModel\\ContactExcel.cs",
+              "ToolTip": "E:\\\u5DE5\u4F5C\\Project_Code\\PersonalContactManagement\\PersonalContactManagement\\api\\PersonalContactManagement\\PersonalContactManagement\\MiniExcleModel\\ContactExcel.cs",
+              "RelativeToolTip": "PersonalContactManagement\\MiniExcleModel\\ContactExcel.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwAsAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T14:16:09.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "IContactServe.cs",
-              "DocumentMoniker": "C:\\Code\\my_project\\project_code\\PersonalContactManagement\\api\\PersonalContactManagement\\PersonalContactManagement\\Domain\\IServe\\IContactServe.cs",
+              "DocumentMoniker": "E:\\\u5DE5\u4F5C\\Project_Code\\PersonalContactManagement\\PersonalContactManagement\\api\\PersonalContactManagement\\PersonalContactManagement\\Domain\\IServe\\IContactServe.cs",
               "RelativeDocumentMoniker": "PersonalContactManagement\\Domain\\IServe\\IContactServe.cs",
-              "ToolTip": "C:\\Code\\my_project\\project_code\\PersonalContactManagement\\api\\PersonalContactManagement\\PersonalContactManagement\\Domain\\IServe\\IContactServe.cs",
+              "ToolTip": "E:\\\u5DE5\u4F5C\\Project_Code\\PersonalContactManagement\\PersonalContactManagement\\api\\PersonalContactManagement\\PersonalContactManagement\\Domain\\IServe\\IContactServe.cs",
               "RelativeToolTip": "PersonalContactManagement\\Domain\\IServe\\IContactServe.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAADwvyMAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAUwC4AAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-06T03:12:21.608Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Result.cs",
-              "DocumentMoniker": "C:\\Code\\my_project\\project_code\\PersonalContactManagement\\api\\PersonalContactManagement\\PersonalContactManagement\\APIHelper\\Result.cs",
-              "RelativeDocumentMoniker": "PersonalContactManagement\\APIHelper\\Result.cs",
-              "ToolTip": "C:\\Code\\my_project\\project_code\\PersonalContactManagement\\api\\PersonalContactManagement\\PersonalContactManagement\\APIHelper\\Result.cs",
-              "RelativeToolTip": "PersonalContactManagement\\APIHelper\\Result.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAIAAAARAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "ContactServe.cs",
+              "DocumentMoniker": "E:\\\u5DE5\u4F5C\\Project_Code\\PersonalContactManagement\\PersonalContactManagement\\api\\PersonalContactManagement\\PersonalContactManagement\\Domain\\Serve\\ContactServe.cs",
+              "RelativeDocumentMoniker": "PersonalContactManagement\\Domain\\Serve\\ContactServe.cs",
+              "ToolTip": "E:\\\u5DE5\u4F5C\\Project_Code\\PersonalContactManagement\\PersonalContactManagement\\api\\PersonalContactManagement\\PersonalContactManagement\\Domain\\Serve\\ContactServe.cs",
+              "RelativeToolTip": "PersonalContactManagement\\Domain\\Serve\\ContactServe.cs",
+              "ViewState": "AgIAAIoAAAAAAAAAAAAqwKUAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-06T03:09:01.836Z",
+              "WhenOpened": "2025-06-06T03:20:09.113Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ContactController.cs",
-              "DocumentMoniker": "C:\\Code\\my_project\\project_code\\PersonalContactManagement\\api\\PersonalContactManagement\\PersonalContactManagement\\Controllers\\ContactController.cs",
-              "RelativeDocumentMoniker": "PersonalContactManagement\\Controllers\\ContactController.cs",
-              "ToolTip": "C:\\Code\\my_project\\project_code\\PersonalContactManagement\\api\\PersonalContactManagement\\PersonalContactManagement\\Controllers\\ContactController.cs",
-              "RelativeToolTip": "PersonalContactManagement\\Controllers\\ContactController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGEAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-06T02:51:49.394Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "20250606024906_init.cs",
-              "DocumentMoniker": "C:\\Code\\my_project\\project_code\\PersonalContactManagement\\api\\PersonalContactManagement\\PersonalContactManagement\\Migrations\\20250606024906_init.cs",
+              "DocumentMoniker": "E:\\\u5DE5\u4F5C\\Project_Code\\PersonalContactManagement\\PersonalContactManagement\\api\\PersonalContactManagement\\PersonalContactManagement\\Migrations\\20250606024906_init.cs",
               "RelativeDocumentMoniker": "PersonalContactManagement\\Migrations\\20250606024906_init.cs",
-              "ToolTip": "C:\\Code\\my_project\\project_code\\PersonalContactManagement\\api\\PersonalContactManagement\\PersonalContactManagement\\Migrations\\20250606024906_init.cs",
+              "ToolTip": "E:\\\u5DE5\u4F5C\\Project_Code\\PersonalContactManagement\\PersonalContactManagement\\api\\PersonalContactManagement\\PersonalContactManagement\\Migrations\\20250606024906_init.cs",
               "RelativeToolTip": "PersonalContactManagement\\Migrations\\20250606024906_init.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -170,24 +190,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "MyDbContext.cs",
-              "DocumentMoniker": "C:\\Code\\my_project\\project_code\\PersonalContactManagement\\api\\PersonalContactManagement\\PersonalContactManagement\\EntityFrameCore\\Config\\MyDbContext.cs",
-              "RelativeDocumentMoniker": "PersonalContactManagement\\EntityFrameCore\\Config\\MyDbContext.cs",
-              "ToolTip": "C:\\Code\\my_project\\project_code\\PersonalContactManagement\\api\\PersonalContactManagement\\PersonalContactManagement\\EntityFrameCore\\Config\\MyDbContext.cs",
-              "RelativeToolTip": "PersonalContactManagement\\EntityFrameCore\\Config\\MyDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwsAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-06T02:40:41.042Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 6,
               "Title": "Contact.cs",
-              "DocumentMoniker": "C:\\Code\\my_project\\project_code\\PersonalContactManagement\\api\\PersonalContactManagement\\PersonalContactManagement\\EntityFrameCore\\EntityModel\\Contact.cs",
+              "DocumentMoniker": "E:\\\u5DE5\u4F5C\\Project_Code\\PersonalContactManagement\\PersonalContactManagement\\api\\PersonalContactManagement\\PersonalContactManagement\\EntityFrameCore\\EntityModel\\Contact.cs",
               "RelativeDocumentMoniker": "PersonalContactManagement\\EntityFrameCore\\EntityModel\\Contact.cs",
-              "ToolTip": "C:\\Code\\my_project\\project_code\\PersonalContactManagement\\api\\PersonalContactManagement\\PersonalContactManagement\\EntityFrameCore\\EntityModel\\Contact.cs",
+              "ToolTip": "E:\\\u5DE5\u4F5C\\Project_Code\\PersonalContactManagement\\PersonalContactManagement\\api\\PersonalContactManagement\\PersonalContactManagement\\EntityFrameCore\\EntityModel\\Contact.cs",
               "RelativeToolTip": "PersonalContactManagement\\EntityFrameCore\\EntityModel\\Contact.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvw8AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -196,28 +203,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
+              "Title": "MyDbContext.cs",
+              "DocumentMoniker": "E:\\\u5DE5\u4F5C\\Project_Code\\PersonalContactManagement\\PersonalContactManagement\\api\\PersonalContactManagement\\PersonalContactManagement\\EntityFrameCore\\Config\\MyDbContext.cs",
+              "RelativeDocumentMoniker": "PersonalContactManagement\\EntityFrameCore\\Config\\MyDbContext.cs",
+              "ToolTip": "E:\\\u5DE5\u4F5C\\Project_Code\\PersonalContactManagement\\PersonalContactManagement\\api\\PersonalContactManagement\\PersonalContactManagement\\EntityFrameCore\\Config\\MyDbContext.cs",
+              "RelativeToolTip": "PersonalContactManagement\\EntityFrameCore\\Config\\MyDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwsAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T02:40:41.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Result.cs",
+              "DocumentMoniker": "E:\\\u5DE5\u4F5C\\Project_Code\\PersonalContactManagement\\PersonalContactManagement\\api\\PersonalContactManagement\\PersonalContactManagement\\APIHelper\\Result.cs",
+              "RelativeDocumentMoniker": "PersonalContactManagement\\APIHelper\\Result.cs",
+              "ToolTip": "E:\\\u5DE5\u4F5C\\Project_Code\\PersonalContactManagement\\PersonalContactManagement\\api\\PersonalContactManagement\\PersonalContactManagement\\APIHelper\\Result.cs",
+              "RelativeToolTip": "PersonalContactManagement\\APIHelper\\Result.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T03:09:01.836Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Code\\my_project\\project_code\\PersonalContactManagement\\api\\PersonalContactManagement\\PersonalContactManagement\\Program.cs",
+              "DocumentMoniker": "E:\\\u5DE5\u4F5C\\Project_Code\\PersonalContactManagement\\PersonalContactManagement\\api\\PersonalContactManagement\\PersonalContactManagement\\Program.cs",
               "RelativeDocumentMoniker": "PersonalContactManagement\\Program.cs",
-              "ToolTip": "C:\\Code\\my_project\\project_code\\PersonalContactManagement\\api\\PersonalContactManagement\\PersonalContactManagement\\Program.cs",
+              "ToolTip": "E:\\\u5DE5\u4F5C\\Project_Code\\PersonalContactManagement\\PersonalContactManagement\\api\\PersonalContactManagement\\PersonalContactManagement\\Program.cs",
               "RelativeToolTip": "PersonalContactManagement\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-06T02:36:40.038Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "EditContactPersonDTO.cs",
-              "DocumentMoniker": "C:\\Code\\my_project\\project_code\\PersonalContactManagement\\api\\PersonalContactManagement\\PersonalContactManagement\\Domain\\Model\\EditContactPersonDTO.cs",
-              "RelativeDocumentMoniker": "PersonalContactManagement\\Domain\\Model\\EditContactPersonDTO.cs",
-              "ToolTip": "C:\\Code\\my_project\\project_code\\PersonalContactManagement\\api\\PersonalContactManagement\\PersonalContactManagement\\Domain\\Model\\EditContactPersonDTO.cs",
-              "RelativeToolTip": "PersonalContactManagement\\Domain\\Model\\EditContactPersonDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwkAAAAtAAAAAAAAAA==",
+              "DocumentIndex": 11,
+              "Title": "20250606033117_UPdateEntity.cs",
+              "DocumentMoniker": "E:\\\u5DE5\u4F5C\\Project_Code\\PersonalContactManagement\\PersonalContactManagement\\api\\PersonalContactManagement\\PersonalContactManagement\\Migrations\\20250606033117_UPdateEntity.cs",
+              "RelativeDocumentMoniker": "PersonalContactManagement\\Migrations\\20250606033117_UPdateEntity.cs",
+              "ToolTip": "E:\\\u5DE5\u4F5C\\Project_Code\\PersonalContactManagement\\PersonalContactManagement\\api\\PersonalContactManagement\\PersonalContactManagement\\Migrations\\20250606033117_UPdateEntity.cs",
+              "RelativeToolTip": "PersonalContactManagement\\Migrations\\20250606033117_UPdateEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvw0AAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-06T07:57:00.697Z",
+              "WhenOpened": "2025-06-06T03:31:17.626Z",
               "EditorCaption": ""
             }
           ]

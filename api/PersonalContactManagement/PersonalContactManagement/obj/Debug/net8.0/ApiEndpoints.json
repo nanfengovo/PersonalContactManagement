@@ -54,6 +54,16 @@
   },
   {
     "ContainingType": "PersonalContactManagement.Controllers.ContactController",
+    "Method": "Export",
+    "RelativePath": "api/Contact/Export",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PersonalContactManagement.Controllers.ContactController",
     "Method": "GetContactPersonById",
     "RelativePath": "api/Contact/GetContactPersonById",
     "HttpMethod": "GET",
@@ -76,6 +86,22 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PersonalContactManagement.Controllers.ContactController",
+    "Method": "Import",
+    "RelativePath": "api/Contact/Import",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": []
   }
 ]

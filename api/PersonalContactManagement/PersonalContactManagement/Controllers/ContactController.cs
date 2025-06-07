@@ -6,6 +6,7 @@ using PersonalContactManagement.APIHelper;
 using PersonalContactManagement.Domain.IServe;
 using PersonalContactManagement.Domain.Model;
 using PersonalContactManagement.Domain.Serve;
+using PersonalContactManagement.EntityFrameCore.EntityModel;
 
 namespace PersonalContactManagement.Controllers
 {
@@ -97,6 +98,37 @@ namespace PersonalContactManagement.Controllers
             }
         }
 
+        [HttpPost]
+        public async Task<IActionResult> Import(IFormFile file)
+        {
+            var result = new Result();
+            var success = await _ContactServe.ImportAsync(file);
+            if(success)
+            {
+                result.Code = 1;
+                result.Msg = "导入成功！";
+                return Ok(result);
+            }
+            else
+            {
+                result.Code = -99;
+                result.Msg = "导入失败！";
+                return Ok(result);
+            }
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Export()
+        {
+            var stream = await _ContactServe.ExportAsync();
+            if (stream == null)
+                return NotFound("没有可导出的联系人数据");
+
+            stream.Position = 0;
+            return File(stream,
+                "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                $"联系人_{DateTime.Now:yyyyMMddHHmmss}.xlsx");
+        }
 
     }
 }

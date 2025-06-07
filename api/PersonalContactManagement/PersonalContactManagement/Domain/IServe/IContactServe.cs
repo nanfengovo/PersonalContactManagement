@@ -32,6 +32,25 @@ namespace PersonalContactManagement.Domain.IServe
         /// <returns></returns>
         Task<bool> EditContactPersonByIdAsync(int id,EditContactPersonDTO personDTOcontactPersonDTO);
 
+        /// <summary>
+        /// 根据Id删除联系人
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         Task<bool> DeletedContactPersonByIdAsync(int id);
+
+        /// <summary>
+        /// 导入
+        /// </summary>
+        /// <param name="file"></param>
+        /// <returns></returns>
+        Task<bool> ImportAsync(IFormFile file);
+
+        /// <summary>
+        /// 导出
+        /// </summary>
+        /// <param name="file"></param>
+        /// <returns></returns>
+        Task<MemoryStream> ExportAsync();
     }
 }
